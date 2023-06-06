@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width:480px;
+    height:480px;
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+}
+.btn{
+    padding: 50px;
+    border:2px solid black;
+    border-radius: 5px;
+    max-width: max-content;
+}
+.mbox{
+    background-color: beige;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+.mbox:hover{
+    background-color: red;
+}
