@@ -16,22 +16,22 @@ clbtn.addEventListener('click',function(){
     const bxs=document.querySelectorAll('.mbox');
     bxs.forEach((bx)=>{
         bx.addEventListener('mouseover',function(e){
-            //e.target.classList.add('clb');
-            e.target.style.backgroundColor='white';
+            const el=document.querySelector('.cpr');
+            e.target.style.backgroundColor=el.value;
         })
     });
 });
-// const rbtn=document.querySelector('.rbtn');
-// rbtn.addEventListener('click',function(){
-//     const bxs=document.querySelectorAll('.mbox');
-//     bxs.forEach((bx)=>{
-//         bx.addEventListener('mouseover',function(e){
-//             var randomColor = Math.floor(Math.random()*16777215).toString(16);
-//             const col="#"+randomColor;
-//             e.target.style.backgroundColor=col;
-//         })
-//     });
-// });
+const rbtn=document.querySelector('.rbtn');
+rbtn.addEventListener('click',function(){
+    const bxs=document.querySelectorAll('.mbox');
+    bxs.forEach((bx)=>{
+        bx.addEventListener('mouseover',function(e){
+            var randomColor = Math.floor(Math.random()*16777215).toString(16);
+            const col="#"+randomColor;
+            e.target.style.backgroundColor=col;
+        })
+    });
+});
 const erase=document.querySelector('.ebtn');
 erase.addEventListener('click',function(){
     const bxs=document.querySelectorAll('.mbox');
