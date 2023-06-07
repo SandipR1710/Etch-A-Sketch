@@ -11,3 +11,29 @@ ctn.addEventListener('click',function(e){
         container.appendChild(box);
     }
 });
+const clbtn=document.querySelector('.lbtn');
+clbtn.addEventListener('click',function(){
+    const bxs=document.querySelectorAll('.mbox');
+    bxs.forEach((bx)=>{
+        bx.addEventListener('mouseover',function(e){
+            e.target.classList.add('clb');
+        })
+    });
+});
+const erase=document.querySelector('.ebtn');
+erase.addEventListener('click',function(){
+    const bxs=document.querySelectorAll('.mbox');
+    bxs.forEach((bx)=>{
+        bx.addEventListener('mouseover',function(e){
+            e.target.classList.remove('clb');
+        })
+    });
+});
+const clear=document.querySelector('.clbtn');
+clear.addEventListener('click',function(){
+    const bxs=document.querySelectorAll('.mbox');
+    bxs.forEach((bx)=>{
+        bx.classList.remove('clb');
+    });
+});
+// console.log(tsize);

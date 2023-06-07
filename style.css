@@ -1,7 +1,6 @@
 *{
     margin: 0;
     padding: 0;
-
 }
 body{
     height: 100vh;
@@ -10,12 +9,15 @@ body{
     align-items: center;
     background-color: rgb(68, 67, 71);
 }
-.cbtn{
+.btns{
+    display: flex;
+    flex-direction: column;
+}
+.cbtn,.lbtn,.clbtn,.ebtn{
     width: 20vh;
     height: 8vh;
     font-family: 'Outfit', sans-serif;
     font-size: 20px;
-
 }
 .full{
     display: flex;
@@ -30,10 +32,9 @@ body{
     flex-wrap: wrap;
 }
 .mbox{
-    background-color: rgb(19, 17, 17);
     border: 1px solid white;
     box-sizing: border-box;
 }
-.mbox:hover{
-    background-color: white;
+.clb{
+    background-color:white;
 }
