@@ -16,16 +16,29 @@ clbtn.addEventListener('click',function(){
     const bxs=document.querySelectorAll('.mbox');
     bxs.forEach((bx)=>{
         bx.addEventListener('mouseover',function(e){
-            e.target.classList.add('clb');
+            //e.target.classList.add('clb');
+            e.target.style.backgroundColor='white';
         })
     });
 });
+// const rbtn=document.querySelector('.rbtn');
+// rbtn.addEventListener('click',function(){
+//     const bxs=document.querySelectorAll('.mbox');
+//     bxs.forEach((bx)=>{
+//         bx.addEventListener('mouseover',function(e){
+//             var randomColor = Math.floor(Math.random()*16777215).toString(16);
+//             const col="#"+randomColor;
+//             e.target.style.backgroundColor=col;
+//         })
+//     });
+// });
 const erase=document.querySelector('.ebtn');
 erase.addEventListener('click',function(){
     const bxs=document.querySelectorAll('.mbox');
     bxs.forEach((bx)=>{
         bx.addEventListener('mouseover',function(e){
-            e.target.classList.remove('clb');
+            //e.target.classList.remove('clb');
+            e.target.style.backgroundColor='';
         })
     });
 });
@@ -33,7 +46,8 @@ const clear=document.querySelector('.clbtn');
 clear.addEventListener('click',function(){
     const bxs=document.querySelectorAll('.mbox');
     bxs.forEach((bx)=>{
-        bx.classList.remove('clb');
+        //bx.classList.remove('clb');
+        bx.style.backgroundColor='';
     });
 });
 // console.log(tsize);

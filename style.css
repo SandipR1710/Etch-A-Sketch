@@ -10,10 +10,17 @@ body{
     background-color: rgb(68, 67, 71);
 }
 .btns{
+    background-color: rgb(33, 33, 42);
+    height: 60vh;
+    width: 30vh;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:10vh;
+    padding:10vh;
 }
-.cbtn,.lbtn,.clbtn,.ebtn{
+.cbtn,.lbtn,.clbtn,.ebtn,.rbtn{
     width: 20vh;
     height: 8vh;
     font-family: 'Outfit', sans-serif;
@@ -34,7 +41,4 @@ body{
 .mbox{
     border: 1px solid white;
     box-sizing: border-box;
-}
-.clb{
-    background-color:white;
 }
