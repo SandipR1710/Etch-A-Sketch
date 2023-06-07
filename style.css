@@ -4,10 +4,24 @@
 }
 body{
     height: 100vh;
+}
+.head,.bottom{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(68, 67, 71);
+    background-color: rgb(82, 82, 82);
+}
+.gname{
+    font-family: 'Tilt Prism', cursive;
+    font-size: 60px;
+    color: rgb(126, 142, 112);
+    padding: 7px;
+}
+.text{
+    font-family: 'Satisfy', cursive;
+    font-size: 30px;
+    color:rgb(165, 171, 161);
 }
 .btns{
     background-color: rgb(33, 33, 42);
@@ -36,8 +50,11 @@ body{
     font-size: 20px;
 }
 .full{
+    height: 100vh;
     display: flex;
+    justify-content: center;
     align-items: center;
+    background-color: rgb(68, 67, 71);
     gap:200px;
 }
 .container{
@@ -50,4 +67,8 @@ body{
 .mbox{
     border: 0.5px solid white;
     box-sizing: border-box;
+}
+.bottom{
+    font-family: 'Satisfy', cursive;
+    color:rgb(165, 171, 161);
 }
